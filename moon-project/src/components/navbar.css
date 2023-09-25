@@ -1,4 +1,18 @@
 /*SHITTY BASIC STYLING*/
-.Navbar {
+.navbar {
     display: flex;
+
   }
+
+.moon-title {
+    margin-left: auto;
+}
+
+.menu-button {
+    margin-left: auto;
+  }
+
+
+
+
+  

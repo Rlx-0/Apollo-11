@@ -1,0 +1,6 @@
+.background {
+    height: 90vh;
+    width: auto;
+    object-fit: cover;
+    display: flex;
+}
