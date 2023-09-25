@@ -5,7 +5,7 @@ const LunarInfo = () => {
     return (
     
         <div className="background">
-            <img src={"./Images/Moon-Cycles.png"} />
+            <img src={"./Images/Moon-CyclesV2.png"} />
         
         </div>
     )

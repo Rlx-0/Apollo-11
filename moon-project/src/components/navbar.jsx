@@ -2,10 +2,26 @@ import "./navbar.css"
 
 const Navbar = () => {
     return (
-    <div className="navbar">
-        <h1 className="moon-title">Moon Cycles</h1>
-        <h4 className="menu-button">button</h4>
-    </div>
+    
+        <nav>
+            <img 
+                className="nav--logo_icon"
+            />
+            <h3 className="nav--logo_text">Moon Facts</h3>
+            
+            <div 
+                className="toggler" 
+            >
+                <p className="toggler--light">Light</p>
+                <div 
+                    className="toggler--slider"
+                
+                >
+                    <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
+            </div>
+        </nav>
 
     )
 }
