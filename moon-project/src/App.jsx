@@ -1,14 +1,22 @@
 import './App.css'
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import LunarInfo from './components/lunarinfo'
 
 function App() {
+  const [darkMode, setDarkMode] = React.useState(true)
+    
+    function toggleDarkMode() {
+        setDarkMode(prevMode => !prevMode)
+    }
 
   return (
     <>
-        <Navbar/> 
+        <Navbar
+          darkMode={darkMode} 
+          toggleDarkMode={toggleDarkMode}
+        /> 
         <LunarInfo/>
         <Footer/>
     </>
