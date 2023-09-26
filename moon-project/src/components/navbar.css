@@ -18,9 +18,15 @@ nav.dark {
     margin-right: 10px;
 }
 
-.nav--logo_text {
+.nav--dark--logo_text {
+    color: #fffbef;
+    margin-right: auto;
+
+}
+.nav--light --logo_text {
     color: #595e85;
     margin-right: auto;
+
 }
 
 .nav--title {
