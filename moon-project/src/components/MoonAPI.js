@@ -1,3 +1,5 @@
+export default async function moonDataFunc() {
+
 const url = 'https://moon-phase.p.rapidapi.com/advanced?lat=51.4768&lon=-0.0004';
 const options = {
 	method: 'GET',
@@ -11,7 +13,9 @@ try {
 	const response = await fetch(url, options);
 	const result = await response.text();
 	console.log(result);
+	const parsedData = (JSON.parse(result));
+	console.log(parsedData)
+	return parsedData
 } catch (error) {
 	console.error(error);
-}
-
+}}
