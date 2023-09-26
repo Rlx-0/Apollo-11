@@ -15,14 +15,14 @@ const Navbar = (props) => {
             <div 
                 className="toggler" 
             >
-                <p className="toggler--light">Light</p>
+                <p className="toggler--light">Sun</p>
                 <div 
                     className="toggler--slider"
                     onClick={props.toggleDarkMode}
                 >
                     <div className="toggler--slider--circle"></div>
                 </div>
-                <p className="toggler--dark">Dark</p>
+                <p className="toggler--dark">Moon</p>
             </div>
         </nav>
 
