@@ -17,7 +17,9 @@ function App() {
           darkMode={darkMode} 
           toggleDarkMode={toggleDarkMode}
         /> 
-        <LunarInfo/>
+        <LunarInfo
+        darkMode={darkMode} 
+        />
         <Footer/>
     </>
   )

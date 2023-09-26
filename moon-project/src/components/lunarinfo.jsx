@@ -1,11 +1,11 @@
 import "./lunarinfo.css"
 
 
-const LunarInfo = () => {
+const LunarInfo = (props) => {
     return (
     
         <div className="background">
-            <img src={"./Images/Moon-CyclesV2.png"} />
+            <img src={props.darkMode ? "./Images/Moon-CyclesV2.png" : "./Images/sun-backgroundV2.jpg"} />
         
         </div>
     )
