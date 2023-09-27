@@ -6,7 +6,6 @@ const LunarInfo = (props) => {
     
         <div className="background">
             <img src={props.darkMode ? "./Images/Moon-CyclesV2.png" : "./Images/sun-backgroundV2.jpg"} />
-        
         </div>
     )
 }
