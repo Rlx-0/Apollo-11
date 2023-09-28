@@ -29,7 +29,7 @@ function App() {
 
 
     /*API fetch*/
-    function MoonAPIData( {buttonClickedState} ) {
+    function MoonAPIData( {buttonClicked} ) {
 	
       async function MoonDataFunc() {
     
@@ -59,7 +59,7 @@ function App() {
     
       
       useEffect(() => {
-        if (buttonClickedState) {
+        if (buttonClicked) {
         MoonDataFunc()
       } }, [])  
     }
@@ -90,7 +90,7 @@ function App() {
         </div>
 
         <MoonAPIData
-          buttonClickedState={buttonClicked}
+          buttonClicked={buttonClicked}
         />
         <Footer/>
     </>
