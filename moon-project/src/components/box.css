@@ -1,0 +1,20 @@
+
+
+
+
+
+.Box div {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Box div h3 {
+    color: #fffbef;
+}
+
+.Box div p {
+    color: #595e85;
+}

@@ -1,7 +1,18 @@
-.background {
+.landing {
     height: 90vh;
     width: auto;
     object-fit: cover;
     display: flex;
     justify-content: center;
+    display: block;
+}
+
+
+.hide-landing {
+    height: 90vh;
+    width: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    display: none;
 }

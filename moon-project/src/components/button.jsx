@@ -1,9 +1,10 @@
 import "./button.css"
 
-const Button = () => {
+const Button = (props) => {
+
     return (
     <div className="moonbtn">
-        <button>Moon</button>
+        <button onClick={props.onClick}>Moon</button>
     </div>
     )
 }
