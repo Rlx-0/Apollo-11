@@ -1,7 +1,7 @@
 import "./lunarinfo.css"
 
 
-const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClickedState}) => {
+const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) => {
 
     /* LOGIC FOR SELECTING WHICH IMG SHOULD BE DISPLAYED ON API DATA
     
@@ -28,12 +28,12 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClickedState
 
     return (
         <div>
-            <div className= {buttonClickedState ? "landing" : "hide-landing"} >
+            <div className= {!buttonClicked ? "landing" : "hide-landing"} >
                 <img  src={darkMode ? "./Images/Moon-CyclesV2.png" : "./Images/sun-backgroundV2.jpg"} />
             </div>
 
-            <div>
-                <h2>{buttonClickedState ? "button clicked" : "button not clicked"} {phaseOfMoon}</h2>
+            <div className= {!buttonClicked ? "hideinfo" : "showinfo"}>
+                <h2> {phaseOfMoon}</h2>
                 <div>
                     <h3>{moonAge}</h3>
                     <h3>{moonRise}</h3>

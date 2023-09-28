@@ -22,7 +22,7 @@ function App() {
     
     /* button click for fetching data*/
     function handleButtonClick() {
-      alert("button has been clicked, API has been fetched!")
+      !buttonClicked ? alert("button has been clicked, API has been fetched!") : alert("button has been UNclicked")
       setButtonClicked(prev => !prev)
     }
 
@@ -60,10 +60,10 @@ function App() {
       
       useEffect(() => {
         if (buttonClicked) {
-        MoonDataFunc()
-      } }, [])  
+          MoonDataFunc();
+        }
+      }, [buttonClicked]);
     }
-
 
   
   return (
@@ -75,23 +75,23 @@ function App() {
         
         <Button
           onClick={handleButtonClick}
+          buttonClicked ={buttonClicked}
         />
         <div className='page'>
           <LunarInfo
             darkMode={darkMode} 
-            buttonClickedState={buttonClicked}
+            buttonClicked={buttonClicked}
             moonAge={moonAge}
             moonRise={moonRise}
             phaseOfMoon={phaseOfMoon}
           />
       
-          <Box 
+          <Box
+          buttonClicked={buttonClicked}
           />
         </div>
 
-        <MoonAPIData
-          buttonClicked={buttonClicked}
-        />
+  
         <Footer/>
     </>
   )
