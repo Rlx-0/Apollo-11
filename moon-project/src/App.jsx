@@ -26,45 +26,39 @@ function App() {
       setButtonClicked(prev => !prev)
     }
 
-
-
-    /*API fetch*/
-    function MoonAPIData( {buttonClicked} ) {
-	
-      async function MoonDataFunc() {
-    
+    /* API call and setting state with info*/
+    async function fetchMoonData() {
       const url = 'https://moon-phase.p.rapidapi.com/advanced?lat=51.4768&lon=-0.0004';
       const options = {
         method: 'GET',
         headers: {
           'X-RapidAPI-Key': 'ea752ba19amshfb504aa314bebacp12ba6bjsn57d76cbdd911',
           'X-RapidAPI-Host': 'moon-phase.p.rapidapi.com'
+          }
         }
-      };
-    
-      try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        const parsedData = (JSON.parse(result));
-        const moonAge= parsedData.moon.age_days
-        const moonRise = parsedData.moon.moonrise
-        const phaseOfMoon = parsedData.moon.phase_name
-        setMoonAge(moonAge)
-        setMoonRise(moonRise)
-        setPhaseOfMoon(phaseOfMoon)
-        console.log(parsedData)
-      } 	catch (error) {
-        console.error(error);
-      }}
-    
-      
-      useEffect(() => {
-        if (buttonClicked) {
-          MoonDataFunc();
+        try {
+          const response = await fetch(url, options);
+          if (!response.ok) {
+            throw Error(response.statusText);
+          }
+          const result = await response.text();
+          const parsedData = (JSON.parse(result));
+          const moonAge= parsedData.moon.age_days
+          const moonRise = parsedData.moon.moonrise
+          const phaseOfMoon = parsedData.moon.phase_name
+          setMoonAge(moonAge)
+          setMoonRise(moonRise)
+          setPhaseOfMoon(phaseOfMoon)
+          console.log(parsedData)
+        }   catch (error) {
+          console.error(error);
         }
-      }, [buttonClicked]);
-    }
 
+      }
+      useEffect(() => {
+        fetchMoonData();
+      }, [!buttonClicked]);
+          
   
   return (
     <>
