@@ -35,11 +35,11 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
             </div>
 
             <div className= {!buttonClicked ? "hideinfo" : "showinfo"}>
-                <h2> {phaseOfMoon}</h2>
+                <h2>The current moon phase is: {phaseOfMoon}</h2>
                 <img src={todaysMoonImg} />
                 <div>
-                    <h3>{moonAge}</h3>
-                    <h3>{moonRise}</h3>
+                    <h3>The moon is in day {moonAge} in its 29.5 day cycle</h3>
+                    <h3>The moon will rise at {moonRise} today</h3>
                 </div>
             </div>
 
