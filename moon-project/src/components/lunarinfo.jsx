@@ -24,6 +24,9 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
     } else if (phaseOfMoon = "Waxing Gibbous") {
         todaysMoonImg == "./Images/Moon-phases/Waxing Gibbous.png"
     }
+
+    
+
     
     return (
         <div className="page">
@@ -66,3 +69,68 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
 }
 
 export default LunarInfo
+
+/* switch(expression) {
+    case "New moon":    
+    // code block     
+    break;   
+    case "Waxing Crescent":     
+    // code block     
+    break; 
+    case "First Quarter":     
+    // code block     
+    break;   
+    case "Waxing Gibbous":     
+    // code block     
+    break; 
+    case "Waning Gibbous":     
+    // code block     
+    break;   
+    case "Third Quarter":     
+    // code block     
+    break; 
+    case "Waning Crescent":     
+    // code block     
+    break;   
+    default:     
+    // code block
+} */
+
+
+
+
+
+
+/*function Boxes({ moonData }) {
+  const reorderMoonPhases = () => {
+    if (moonData.length === 0) return [];
+
+    // Find the index of the current moon phase
+    const currentIndex = moonData.findIndex((phase) => phase.isCurrent);
+
+    // Reorder the moon phases with the current phase at the top
+    const reorderedPhases = [
+      moonData[currentIndex],
+      ...moonData.slice(0, currentIndex),
+      ...moonData.slice(currentIndex + 1),
+    ];
+
+    return reorderedPhases;
+  };
+
+  const reorderedPhases = reorderMoonPhases();
+
+  return (
+    <div>
+      {reorderedPhases.map((phase, index) => (
+        <div key={index}>
+          <h2>{phase.phaseName}</h2>
+          {Display other moon phase information here }
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default MoonDataComponent; 
+*/
