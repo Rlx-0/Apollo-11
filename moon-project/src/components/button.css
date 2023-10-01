@@ -1,4 +1,38 @@
 .moonbtn {
-    height: 20px;
-    width: 50px;
+/* Size=XL, Type=Fill, Icon=No Icon, Corner radius=Corners-Max, State=Regular, Stretch=False */
+
+position: absolute;
+width: 300px;
+height: 86px;
+left: 4820px;
+top: 2948px;
+
+background: #000000;
+border-radius: 32px;
+
+
+/* Label */
+
+position: absolute;
+width: 56px;
+height: 24px;
+left: calc(50% - 56px/2);
+top: calc(50% - 24px/2);
+
+/* Primary/H6-18 */
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+/* Text/White */
+color: #FFFFFF;
+
+
 }
