@@ -1,18 +1,9 @@
-.hidebox {
-    display: none;
-}
-
-.showbox {
-    display: block;
-}
-
-.boxes div {
+.Box div {
     background: rgba(0, 0, 0, 0.2);
     height: 100px;
     width: 400px;
     padding: 10px;
-    margin: 40px;
-
+    margin: 10px;
 }
 
 .boxes div h3 {

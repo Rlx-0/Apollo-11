@@ -17,36 +17,3 @@
     justify-content: center;
     display: none;
 }
-
-.hideinfo {
-    display: none;
-}
-
-.showinfo{
-    display: block;
-}
-
-.current-moon {
-    height: 500px;
-    width: 500px;
-}
-
-.current-moon img {
-    height: 100%;
-    width: 100%;
-}
-
-.moon-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.moon-info h2 {
-    /* margin: 10px; */
-    margin: 0 auto; 
-}
-
-.moon-info h3 {
-    margin: 20px;
-}
