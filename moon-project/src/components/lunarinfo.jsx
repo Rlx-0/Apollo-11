@@ -39,7 +39,7 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
                 <div className="current-moon">
                     <img src="./Images/GrayMoon.jpg" alt="" />
                 </div>
-                <h2>{/* {props.buttonClickedState ? "button clicked" : "button not clicked"} */} Moon {props.phaseOfMoon}</h2>
+                <h2>{props.buttonClickedState ? "button clicked" : "button not clicked"} Moon {props.phaseOfMoon}</h2>
                 <div className="moon-info">
                     <h3>Age of moon: {props.moonAge}</h3>
                     <h3>Time of rise: {props.moonRise}</h3>
