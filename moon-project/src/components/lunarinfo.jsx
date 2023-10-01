@@ -34,7 +34,7 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
                 <img  src={darkMode ? "./Images/Moon-CyclesV2.png" : "./Images/sun-backgroundV2.jpg"} />
             </div>
 
-<<<<<<< HEAD
+
             <div>
                 <div className="current-moon">
                     <img src="./Images/GrayMoon.jpg" alt="" />
@@ -43,14 +43,15 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
                 <div className="moon-info">
                     <h3>Age of moon: {props.moonAge}</h3>
                     <h3>Time of rise: {props.moonRise}</h3>
-=======
+                </div>
+            </div>
+
             <div className= {!buttonClicked ? "hideinfo" : "showinfo"}>
                 <h2>The current moon phase is: {phaseOfMoon}</h2>
                 <img src={todaysMoonImg} />
                 <div>
                     <h3>The moon is in day {moonAge} in its 29.5 day cycle</h3>
                     <h3>The moon will rise at {moonRise} today</h3>
->>>>>>> 5dd6bf2b6fe19fbe81c8f64c6939ece39a46a697
                 </div>
             </div>
 
