@@ -25,21 +25,39 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
         todaysMoonImg == "./Images/Moon-phases/Waxing Gibbous.png"
     }
     
-
-
-
     return (
-        <div>
+        <div className="page">
             <div className= {!buttonClicked ? "landing" : "hide-landing"} >
                 <img  src={darkMode ? "./Images/Moon-CyclesV2.png" : "./Images/sun-backgroundV2.jpg"} />
             </div>
 
             <div className= {!buttonClicked ? "hideinfo" : "showinfo"}>
-                <h2>The current moon phase is: {phaseOfMoon}</h2>
-                <img src={todaysMoonImg} />
-                <div>
-                    <h3>The moon is in day {moonAge} in its 29.5 day cycle</h3>
-                    <h3>The moon will rise at {moonRise} today</h3>
+                <div className="page2">
+                    <h2>The current moon phase is: {phaseOfMoon}</h2>
+                    <img src={todaysMoonImg} />
+                    <div>
+                        <h3>The moon is in day {moonAge} in its 29.5 day cycle</h3>
+                        <h3>The moon will rise at {moonRise} today</h3>
+                    </div>
+
+                    <div className= {!buttonClicked ? "hidebox" : "showbox"}>
+                        <div className="boxes boxes2">
+                            <h3>Waxing</h3>
+                            <p>The moon is appearing to get larger</p>
+                        </div>
+                        <div className="boxes">
+                            <h3>Waning</h3>
+                            <p>The moon is appearing to get smaller</p>
+                        </div>
+                        <div className="boxes">
+                            <h3>Crescent</h3>
+                            <p>More shadow is showing than the moon</p>
+                        </div>
+                        <div className="boxes">
+                            <h3>Gibbous</h3>
+                            <p>More moon is showing than the shadow</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

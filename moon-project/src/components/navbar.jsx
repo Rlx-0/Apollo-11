@@ -7,6 +7,7 @@ const Navbar = (props) => {
             className={props.darkMode ? "dark": ""}
         >
             <img 
+                src="./Images/moonlogo1.png"
                 className="nav--logo_icon"
             />
             {/* switch between logos  */}

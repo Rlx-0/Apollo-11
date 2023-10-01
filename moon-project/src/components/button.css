@@ -1,38 +1,44 @@
 .moonbtn {
-/* Size=XL, Type=Fill, Icon=No Icon, Corner radius=Corners-Max, State=Regular, Stretch=False */
+/* Button 2 */
 
-position: absolute;
-width: 300px;
-height: 86px;
-left: 4820px;
-top: 2948px;
+box-sizing: border-box;
 
-background: #000000;
-border-radius: 32px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 18px 32px;
+gap: 10px;
+
+position: relative;
+width: 146px;
+height: 48px;
+
+border: 1px solid rgba(46, 46, 46, 0.85);
+border-radius: 20px;
 
 
-/* Label */
+/* Buy now */
 
-position: absolute;
-width: 56px;
-height: 24px;
-left: calc(50% - 56px/2);
-top: calc(50% - 24px/2);
+width: 82px;
+height: 12px;
 
-/* Primary/H6-18 */
-font-family: 'Gilroy';
+font-family: 'Montserrat';
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 font-size: 18px;
-line-height: 24px;
-/* identical to box height, or 133% */
+line-height: 22px;
 display: flex;
 align-items: center;
-text-align: center;
-letter-spacing: -0.002em;
 
-/* Text/White */
-color: #FFFFFF;
+color: #2E2E2E;
 
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+    
 
 }

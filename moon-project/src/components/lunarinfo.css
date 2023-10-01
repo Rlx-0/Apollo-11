@@ -1,7 +1,5 @@
-@import './box.css';
-
 .landing {
-    height: 90vh;
+    height: 85vh;
     width: auto;
     object-fit: cover;
     display: flex;
@@ -10,7 +8,7 @@
 }
 
 .hide-landing {
-    height: 90vh;
+    height: 85vh;
     width: auto;
     object-fit: cover;
     display: flex;
@@ -23,5 +21,56 @@
 }
 
 .showinfo {
+    display: block;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.boxes {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.boxes2 {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.boxes div h3 {
+    color: #fffbef;
+}
+
+.boxes div p {
+    color: #595e85;
+}
+
+.hidebox {
+    display: none;
+}
+
+.showbox {
     display: block;
 }

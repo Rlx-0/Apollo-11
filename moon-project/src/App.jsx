@@ -4,7 +4,6 @@ import Navbar from './components/navbar'
 import Footer from './components/footer'
 import LunarInfo from './components/lunarinfo'
 import Button from './components/button'
-import Box from './components/box'
 
 
 function App() {
@@ -71,21 +70,15 @@ function App() {
           onClick={handleButtonClick}
           buttonClicked ={buttonClicked}
         />
-        <div className='page'>
-          <LunarInfo
-            darkMode={darkMode} 
-            buttonClicked={buttonClicked}
-            moonAge={moonAge}
-            moonRise={moonRise}
-            phaseOfMoon={phaseOfMoon}
-          />
-      
-          <Box
-          buttonClicked={buttonClicked}
-          />
-        </div>
+        
+            <LunarInfo
+              darkMode={darkMode} 
+              buttonClicked={buttonClicked}
+              moonAge={moonAge}
+              moonRise={moonRise}
+              phaseOfMoon={phaseOfMoon}
+            />
 
-  
         <Footer/>
     </>
   )
