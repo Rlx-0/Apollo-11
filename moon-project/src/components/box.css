@@ -1,15 +1,24 @@
-.Box div {
+.hidebox {
+    display: none;
+}
+
+.showbox {
+    display: block;
+}
+
+.boxes div {
     background: rgba(0, 0, 0, 0.2);
     height: 100px;
     width: 400px;
     padding: 10px;
     margin: 40px;
+
 }
 
-.Box div h3 {
+.boxes div h3 {
     color: #fffbef;
 }
 
-.Box div p {
+.boxes div p {
     color: #595e85;
 }

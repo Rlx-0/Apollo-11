@@ -1,3 +1,5 @@
+@import './box.css';
+
 .landing {
     height: 90vh;
     width: auto;
@@ -7,7 +9,6 @@
     display: block;
 }
 
-
 .hide-landing {
     height: 90vh;
     width: auto;
@@ -15,6 +16,14 @@
     display: flex;
     justify-content: center;
     display: none;
+}
+
+.hideinfo {
+    display: none;
+}
+
+.showinfo{
+    display: block;
 }
 
 .current-moon {

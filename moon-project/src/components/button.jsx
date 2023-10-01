@@ -3,8 +3,8 @@ import "./button.css"
 const Button = (props) => {
 
     return (
-    <div className="moonbtn">
-        <button onClick={props.onClick}>Moon</button>
+    <div>
+        <button className="moonbtn" onClick={props.onClick}>Moon</button>
     </div>
     )
 }

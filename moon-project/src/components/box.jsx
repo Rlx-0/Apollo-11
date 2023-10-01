@@ -1,9 +1,9 @@
 import "./box.css"
 
-const Box = () => {
+const Box = ({buttonClicked}) => {
     return (
-    <div className="Box">
-        <div>
+    <div className= {!buttonClicked ? "hidebox" : "showbox"}>
+        <div className="boxes">
             <h3>Waxing</h3>
             <p>The moon is appearing to get larger</p>
         </div>
