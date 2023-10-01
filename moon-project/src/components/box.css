@@ -1,14 +1,9 @@
-
-
-
-
-
 .Box div {
     background: rgba(0, 0, 0, 0.2);
     height: 100px;
     width: 400px;
     padding: 10px;
-    margin: 10px;
+    margin: 40px;
 }
 
 .Box div h3 {
