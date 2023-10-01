@@ -17,3 +17,11 @@
     justify-content: center;
     display: none;
 }
+
+.hideinfo {
+    display: none;
+}
+
+.showinfo {
+    display: block;
+}
