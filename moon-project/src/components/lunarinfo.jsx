@@ -45,20 +45,36 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
 
                     <div className= {!buttonClicked ? "hidebox" : "showbox"}>
                         <div className="boxes boxes2">
-                            <h3>Waxing</h3>
-                            <p>The moon is appearing to get larger</p>
+                            <h3>New Moon</h3>
+                            <p>The first stage of our moon's cycle, almost fully engulfed in shadow while appearing to get larger</p>
                         </div>
                         <div className="boxes">
-                            <h3>Waning</h3>
-                            <p>The moon is appearing to get smaller</p>
+                            <h3>Waxing Crescent</h3>
+                            <p>More shadow is showing than the moon, while appearing to get larger</p>
                         </div>
                         <div className="boxes">
-                            <h3>Crescent</h3>
-                            <p>More shadow is showing than the moon</p>
+                            <h3>First Quarter</h3>
+                            <p>The moon is covered in shadow by 50%, while appearing to get larger</p>
                         </div>
                         <div className="boxes">
-                            <h3>Gibbous</h3>
-                            <p>More moon is showing than the shadow</p>
+                            <h3>Waxing Gibbous</h3>
+                            <p>More moon is showing than shadow, while appearing to get larger</p>
+                        </div>
+                        <div className="boxes">
+                            <h3>Waning Gibbous</h3>
+                            <p>More moon is showing than shadow, while appearing to get smaller</p>
+                        </div>
+                        <div className="boxes">
+                            <h3>Third Quarter</h3>
+                            <p>The moon is covered in shadow by 50%, while appearing to get smaller</p>
+                        </div>
+                        <div className="boxes">
+                            <h3>Waning Crescent</h3>
+                            <p>More shadow is showing than the moon, while appearing to get smaller</p>
+                        </div>
+                        <div className="boxes">
+                            <h3>Full Moon</h3>
+                            <p>The moon is fully unveiled, like a spotlight on a stage, like a beacon amongst the stars, similar to a lighthouse in the ocean where the lighthouse is the moon and the ocean is outer space</p>
                         </div>
                     </div>
                 </div>
