@@ -25,7 +25,37 @@ const LunarInfo = ({phaseOfMoon, moonAge, moonRise, darkMode, buttonClicked}) =>
         todaysMoonImg == "./Images/Moon-phases/Waxing Gibbous.png"
     }
 
-    
+    const moonPhaseArray = ["Full Moon", "Waning Gibbous", "Third Quarter", "Waning Crescent", "New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous"]
+
+    const reorderedPhases = []
+    const reorderMoonPhases = () => {
+
+    // Find the index of the current moon phase
+    const currentIndex = moonPhaseArray.indexOf(phaseOfMoon);
+
+    // Reorder the moon phases with the current phase at the top
+    const reorderedPhases = [
+        moonPhaseArray[currentIndex],
+      ...moonPhaseArray.slice(currentIndex +1),
+      ...moonPhaseArray.slice(0, currentIndex),
+    ];
+
+    return reorderedPhases;
+  };
+
+    const waxingGibbousText = "More moon is showing than shadow, while appearing to get larger"
+    const waningGibbousText = "More moon is showing than shadow, while appearing to get smaller"
+    const thirdQuarterText = "The moon is covered in shadow by 50%, while appearing to get smaller"
+    const waningCrescentText = "More shadow is showing than the moon, while appearing to get smaller"
+    const newMoonText = "The first stage of our moon's cycle, almost fully engulfed in shadow while appearing to get larger"
+    const waxingCrescentText = "More shadow is showing than the moon, while appearing to get larger"
+    const firstQuarterText = "The moon is covered in shadow by 50%, while appearing to get larger"
+    const fullMoonText = "The moon is fully unveiled, like a spotlight on a stage, like a beacon amongst the stars, similar to a lighthouse in the ocean where the lighthouse is the moon and the ocean is outer space"
+
+  
+  
+
+    console.log(reorderMoonPhases());
 
     
     return (
@@ -117,36 +147,3 @@ export default LunarInfo
 
 
 
-/*function Boxes({ moonData }) {
-  const reorderMoonPhases = () => {
-    if (moonData.length === 0) return [];
-
-    // Find the index of the current moon phase
-    const currentIndex = moonData.findIndex((phase) => phase.isCurrent);
-
-    // Reorder the moon phases with the current phase at the top
-    const reorderedPhases = [
-      moonData[currentIndex],
-      ...moonData.slice(0, currentIndex),
-      ...moonData.slice(currentIndex + 1),
-    ];
-
-    return reorderedPhases;
-  };
-
-  const reorderedPhases = reorderMoonPhases();
-
-  return (
-    <div>
-      {reorderedPhases.map((phase, index) => (
-        <div key={index}>
-          <h2>{phase.phaseName}</h2>
-          {Display other moon phase information here }
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default MoonDataComponent; 
-*/
